@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let namaa = ["faqih", "felix", "FAdlan", "yayang", "fikri", "rijal"];
+        // console.log(namaa.join());
+        console.log(namaa.sort());
+        // console.log(namaa.sort(function(a, b){return b-a}));
+        // console.log(namaa.join());
+        // console.log(namaa.sort(function(a,b){return a.toLowerCase() > b.toUpperCase() }));
+        // console.log(namaa.join());
+        // console.log(namaa.sort((a,b) => b.toUpperCase() > a.toLowerCase()));
+        // console.log(namaa);
+        namaa.sort(function(a,b) {
+            var namaaA = a.toUpperCase();
+            var namaaB = b.toLowerCase();
+            if (namaaA < namaaB){
+                return -1;
+            }
+            if (namaaA > namaaB){
+                return 1;
+
+            }
+            return 0;
+        });
+        console.log(namaa);
+    </script>
+</body>
+</html>

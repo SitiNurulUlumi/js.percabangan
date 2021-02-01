@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object adalah sekumpulan nilai yang memiliki nama
+        // cara membuat object : literal, function declaration, construktor
+        // manipulasi object : add new property, update , delete
+
+        function obj1(nama){
+            let mhs = {};
+            mhs.nama = nama;
+            return mhs;
+        }
+        var mhs1 = obj1('nurul');
+        console.log(mhs1)
+
+        var main = {};
+        main.nama = 'nurul';
+        main.main = 'helix';
+        console.log(main)
+
+        function buatObject(nama){
+            let namaObj = {};
+            namaObj.nama = nama;
+            return namaObj;
+        }
+        dolan = buatObject('ulumi');
+        dolan.main = 'jump';
+
+        console.log(dolan)
+
+        var newObj = {...main, ...dolan};
+        console.log(newObj)
+
+    </script>
+</body>
+</html>

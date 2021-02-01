@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function objectMahasiswa(nama, kelas, alamat){
+        //     var mhs = {};
+        //     mhs.nama = nama;
+        //     mhs.kelas = kelas;
+        //     mhs.alamat = alamat;
+        //     return mhs;
+        // }
+        // var mhs1 = objectMahasiswa('Siti Nurul Ulumi','3D', 'pecabean')
+
+        function Mahasiswa(nama, kelas, alamat){
+            let mhs = {};
+            mhs.nama = nama;
+            mhs.kelas = kelas;
+            mhs.alamat = alamat;
+            return mhs;
+        }
+
+        var mhs1 = Mahasiswa('Siti Nurul Ulumi', '3D', 'Pecabean');
+        console.log(mhs1)
+
+        var maha ={};
+        maha.nama = 'Siti Nurul Ulumi';
+        maha.kelas = '3D';
+        maha.alamat = 'Pecabean';
+        console.log(maha)
+
+        function objectMhs(nama, kelas, alamat, hobby){
+            let mhssw = {};
+            mhssw.nama = nama;
+            mhssw.kelas = kelas;
+            mhssw.alamat = alamat;
+            mhssw.hobby = hobby;
+            return mhssw;
+        }
+
+        siswa = objectMhs('Nurul');
+        siswa.kelas = ('3D');
+        siswa.alamat = ('Pecabean');
+        siswa.hobby = ('Basket');
+        console.log(siswa)
+
+        var newObj = {...maha, ...siswa};
+        console.log(newObj)
+    </script>
+</body>
+</html>

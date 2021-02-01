@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        // array : struktur data (objjek) yang disimpan dalam suatu tempat
+        // penulisan array : integer tampa koma, string pakai petik, pemisah pakai koma
+        // indeks dimulai 0,1,2,3 
+        // tipedata : boolean string integer 
+        //method array : length, join, push and pop
+
+        let nama = ["siti", "nurul", "ulumi"] 
+        console.log(nama); //mencetak isi array nama
+        console.log(nama.length); //menghitung berapa panjang array
+        console.log(nama[1]); //mengambil indeks array ke 1
+        console.log(nama.toString()); //mengonversi array menjadi string
+
+        //menambah elemen dengan cara memasukkan aray dibahawanya
+        let motor=[];
+        motor[0]='honda';
+        motor[1]='yamaha';
+        motor[2]='suzuki';
+        console.log(motor);
+        //update array mengubah nilai array 
+        motor[2]='kawasaki';
+        console.log(motor);
+
+        //hapus value/nilai array , kenapa undifined karena kalau mengahpus saja maka akan menghapus arraynya bukan nilainya
+        motor[2]=undefined;
+        console.log(motor);
+        */
+
+        //membaca array dengan panjang arraynya ada berapa
+        // let nama=['siti', 'nurul', 'ulumi','ull'];
+        // for(let i=0; i< nama.length; i++){
+        //     console.log(nama[i]);
+        // }
+
+        //join itu seperti mengubah array menjadi string dan bisa mengubah koma menjadi apapun misal strip
+        // let nama=['siti', 'nurul', 'ulumi','ull'];
+        // console.log(nama.join());
+        // console.log(nama.join('-'));
+        // console.log(nama.join('\n'));
+
+        //push menambahkan array paling belakang
+        // let nama=['siti', 'nurul', 'ulumi','ull'];
+        // console.log(nama.join());
+        // nama.push("umi");
+        // console.log(nama.join());
+
+        //pop untuk menghapus dari push(diakhir)
+        // let nama=['siti', 'nurul', 'ulumi','ull'];
+        // console.log(nama.join());
+        // nama.pop();
+        // console.log(nama.join());
+
+        // //menghapus bagian depan dari array dengan shift
+        // let nama=['siti', 'nurul', 'ulumi','ull'];
+        // console.log(nama.join());
+        // nama.shift();
+        // console.log(nama.join());
+
+        //menambahkan bagian depan dari array dengan unshift
+        // let nama=['siti', 'nurul', 'ulumi','ull'];
+        // console.log(nama.join());
+        // nama.unshift('sittiiii');
+        // console.log(nama.join());
+
+        //mencetak array kebawah 
+        // let nama=['siti', 'nurul', 'ulumi','ull'];
+        // nama.forEach(function(nrl){
+        //     console.log(nrl);
+        // })
+            
+
+        //map untuk perulangan di array dengan memanggil variabel baru dg mengalikan berapa misalnya dikalikan 2 dan hasilnya masih tetap array
+        // let number=[2,5,9,3,1];
+        // // let number2 = number.map(function(nrl){
+        // //     return nrl* 2;
+        // // })
+        // // console.log(number2.join());
+
+        // //sort mengurutkan array
+        // console.log(number.sort());
+        // console.log(number.join());
+
+        // let angka = [28, 2, 18, 78, -2, 98, 0, 15,27];
+        // console.log(angka.join());
+        // console.log(angka.sort());
+        // console.log(angka.sort(function(a, b){return a-b}));
+        // console.log(angka.join());
+
+
+        let namaa = ["faqih", "felix", "FAdlan", "yayang", "fikri", "rijal"];
+        // console.log(namaa.join());
+        console.log(namaa.sort());
+        // console.log(namaa.sort(function(a, b){return b-a}));
+        // console.log(namaa.join());
+        // console.log(namaa.sort(function(UpperCase, LowerCase){return LowerCase-UpperCase}));
+        // console.log(namaa.join());
+        // console.log(namaa.sort(function(a,b){return a.toLowerCase() > b.toUpperCase() }));
+        // console.log(namaa.join());
+        // console.log(namaa.sort((a,b) => b.toUpperCase() > a.toLowerCase()));
+        // console.log(namaa);
+        namaa.sort(function(a,b) {
+            var namaaA = a.toUpperCase();
+            var namaaB = b.toLowerCase();
+            if (namaaA < namaaB){
+                return -1;
+            }
+            if (namaaA > namaaB){
+                return 1;
+
+            }
+            return 0;
+        });
+        console.log(namaa);
+    </script>
+</body>
+</html>

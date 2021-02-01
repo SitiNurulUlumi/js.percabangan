@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ulang = true;
+while(ulang){
+    console.log('pengulangan');
+    ulang = confirm("lagi?");
+}
+
+let nilaiAwal = 20;
+while(nilaiAwal <= 10){
+    console.log("ini pengulangan ke-"+nilaiAwal+"x");
+    nilaiAwal++
+}
+
+let nilaiAwal2 = 20;
+do{
+    console.log("ini pengulangan dengan do-while ke-"+nilaiAwal2);
+    nilaiAwal2--;
+}while(nilaiAwal2 >= 10)
+
+for(let i=1; i<=6; i++){
+    console.log("mobil dengan motor ke- "+i+"beroperasi dengan benar");
+}
+for(let i=7; i<=7; i++){
+    console.log("mobil dengan motor ke- "+i+"tidak beroperasi dengan benar");
+}
+
+let jml_mbl = 10;
+let mbl_benar = 8;
+let nomor_mbl = 1;
+while(nomor_mbl <= mbl_benar){
+    console.log('mobil dengan nmor '+ nomor_mbl+"beroperasi dengan benar");
+    nomor_mbl++
+}
+
+for(let i=0; i<Array.length; i++){
+    //ini statment
+}
+
+for(nomor_mbl+1; mbl_benar<= jml_mbl; nomor_mbl++){
+    console.log('mobil dengan nomor'+nomor_mbl+"tidak beroperasi");
+}
+
+
+function printPlugin(num){
+for(let num = 1; num <=10; num++){
+    if (num % 2 === 0 && num % 5 === 0){
+        console.log("PLUGIN");
+    }else if (num % 5 === 0){
+        console.log("in");
+    }else if(num % 2 === 0){
+        console.log("plug");
+    }else{
+        console.log(num);
+    }
+}
+}
+</script>
+</body>
+</html>
